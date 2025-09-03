@@ -1,0 +1,2712 @@
+{
+  "header": {
+    "CSP Name": "A-LIGN",
+    "CSO": "A-SCEND",
+    "Assessment": "FedRAMP 20x Low",
+    "Assessor": "RISCPoint",
+    "Lead Assessor": "Tony Bai",
+    "Date": "08-14-2025"
+  },
+  "control_groups": [
+    {
+      "type": "CMT",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-CMT-01",
+          "description": "Log and monitor system modifications",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "logging_metric_alert_audit_configuration_changes_20250721-090936.json",
+              "evidenceID": "5720828",
+              "hashedID": "5642557189218317579",
+              "full_path": "[REDACTED]",
+              "md5_hash": "f1c6a66f17da08d44323baa3bed2251e",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_custom_role_changes_20250721-090936.json",
+              "evidenceID": "5720827",
+              "hashedID": "5642557136179265882",
+              "full_path": "[REDACTED]",
+              "md5_hash": "a2368b6acc8419b676f66bc21c567d4a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_firewall_rule_changes_20250721-090936.json",
+              "evidenceID": "5720918",
+              "hashedID": "5642556390689967493",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c9302ad64629f3f02088448acbd3e160",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_network_changes_20250721-090936.json",
+              "evidenceID": "5720920",
+              "hashedID": "5642556391711339623",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6a911ae595e60d6f0330f4c15204054a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_project_ownership_assignment_20250721-090936.json",
+              "evidenceID": "5720829",
+              "hashedID": "5642557188740245820",
+              "full_path": "[REDACTED]",
+              "md5_hash": "168de866671c1d1d65879ba4a6487d49",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_sql_instance_configuration_changes_20250721-090936.json",
+              "evidenceID": "5720825",
+              "hashedID": "5642557136200079096",
+              "full_path": "[REDACTED]",
+              "md5_hash": "06af775e8fe63a6077107eabf1fc2a1a",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CMT-02",
+          "description": "Execute changes though redeployment of version controlled immutable resources rather than direct modification wherever possible",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_api_run.tf_20250804-151518.json",
+              "evidenceID": "5767876",
+              "hashedID": "5642586097910976691",
+              "full_path": "[REDACTED]",
+              "md5_hash": "95d391da984905fab6808deb8bf0c69f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_iam.tf_20250722-095622.json",
+              "evidenceID": "5720930",
+              "hashedID": "5642556397680295857",
+              "full_path": "[REDACTED]",
+              "md5_hash": "ddc87bc6f99caa177fc387582cca973b",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CMT-03",
+          "description": "Implement automated testing and validation of changes prior to deployment",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_codeql.yml_20250724-102416.json",
+              "evidenceID": "5740341",
+              "hashedID": "5642564556163565556",
+              "full_path": "[REDACTED]",
+              "md5_hash": "3d49c38fbed9e246487aa1f9dfcca0c9",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_rulesets_20250721-103430.json",
+              "evidenceID": "5720847",
+              "hashedID": "5642557181472379534",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6e5b9d81ec7aca81a455908151b84b2f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_workflow_files_20250731-113324.json",
+              "evidenceID": "5752696",
+              "hashedID": "5642576468623834695",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d5c55ca772a3ee4ed6d545a38d102d96",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CMT-04",
+          "description": "Have a documented change management procedure",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_rulesets_20250721-103430.json",
+              "evidenceID": "5720847",
+              "hashedID": "5642557181472379534",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6e5b9d81ec7aca81a455908151b84b2f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_workflow_files_20250731-113324.json",
+              "evidenceID": "5752696",
+              "hashedID": "5642576468623834695",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d5c55ca772a3ee4ed6d545a38d102d96",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CMT-05",
+          "description": "Evaluate the risk and potential impact of any change",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_rulesets_20250721-103430.json",
+              "evidenceID": "5720847",
+              "hashedID": "5642557181472379534",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6e5b9d81ec7aca81a455908151b84b2f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_workflow_files_20250731-113324.json",
+              "evidenceID": "5752696",
+              "hashedID": "5642576468623834695",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d5c55ca772a3ee4ed6d545a38d102d96",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_audit_configuration_changes_20250721-090936.json",
+              "evidenceID": "5720828",
+              "hashedID": "5642557189218317579",
+              "full_path": "[REDACTED]",
+              "md5_hash": "f1c6a66f17da08d44323baa3bed2251e",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_custom_role_changes_20250721-090936.json",
+              "evidenceID": "5720827",
+              "hashedID": "5642557136179265882",
+              "full_path": "[REDACTED]",
+              "md5_hash": "a2368b6acc8419b676f66bc21c567d4a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_firewall_rule_changes_20250721-090936.json",
+              "evidenceID": "5720918",
+              "hashedID": "5642556390689967493",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c9302ad64629f3f02088448acbd3e160",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_network_changes_20250721-090936.json",
+              "evidenceID": "5720920",
+              "hashedID": "5642556391711339623",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6a911ae595e60d6f0330f4c15204054a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_project_ownership_assignment_20250721-090936.json",
+              "evidenceID": "5720829",
+              "hashedID": "5642557188740245820",
+              "full_path": "[REDACTED]",
+              "md5_hash": "168de866671c1d1d65879ba4a6487d49",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_sql_instance_configuration_changes_20250721-090936.json",
+              "evidenceID": "5720825",
+              "hashedID": "5642557136200079096",
+              "full_path": "[REDACTED]",
+              "md5_hash": "06af775e8fe63a6077107eabf1fc2a1a",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "IAM",
+      "group_result": "PARTIAL",
+      "controls": [
+        {
+          "reference_identifier": "KSI-IAM-01",
+          "description": "Enforce multi-factor authentication (MFA) using methods that are difficult to intercept or impersonate (phishing-resistant MFA) for all user authentication",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_code.js_20250724-102426.json",
+              "evidenceID": "5730674",
+              "hashedID": "5642569721585941153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c300cf32f19493605d1e00e71baa978c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_code.js_20250724-102427.json",
+              "evidenceID": "5730672",
+              "hashedID": "5642569737746535135",
+              "full_path": "[REDACTED]",
+              "md5_hash": "43f553cce0ef80a837dd1a65dd52a03f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_tenant.yaml_20250731-113323.json",
+              "evidenceID": "5752697",
+              "hashedID": "5642576470156931704",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2e9d7ffc2255781b036a4e7445e8862f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_audit_configuration_changes_20250721-090936.json",
+              "evidenceID": "5720828",
+              "hashedID": "5642557189218317579",
+              "full_path": "[REDACTED]",
+              "md5_hash": "f1c6a66f17da08d44323baa3bed2251e",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "workspace_mfa_20250731-140647.json",
+              "evidenceID": "5753288",
+              "hashedID": "5642575627642890999",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bbd7eae9ac0c3d62cadca2cb091b9ad1",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "PARTIAL",
+          "findings_results": "Internal Testing states that for github_file_retrieval_tenant.yaml_20250731-113323.json, the Auth) configuration enables multi-factor authentication (MFA) with `otp` (authenticator app) and `recovery-code` as the allowed factors. Other factors like `push-notification`, `sms`, and `email` are disabled and that this configuration is phishing-resistant.  Use of OTP per Federal guidance is not phishing-resistant and validation IAM-01 is considered partially met.",
+          "findings_response": "The finding that not all users have phishing-resistant MFA is confirmed. While A-SCEND allows for OTP MFA, which is not considered phishing-resistant, users do have the option to use SSO for a more secure login.\n\nInternally A-LIGN meets this requirement by implementing the following:\n* All A-LIGN internal users are required to authenticate using SSO, which enforces phishing-resistant MFA.\n* All developers are required to authenticate using FIDO keys, which is a phishing-resistant method.\n\nThe A-SCEND team is developing a plan to require all federal customers to authenticate with phishing-resistant MFA to access A-SCEND."
+        },
+        {
+          "reference_identifier": "KSI-IAM-02",
+          "description": "Use secure passwordless methods for user authentication and authorization when feasible, otherwise enforce strong passwords with MFA",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_authorization.go_20250731-113240.json",
+              "evidenceID": "5752695",
+              "hashedID": "5642576469137656726",
+              "full_path": "[REDACTED]",
+              "md5_hash": "eb0ccb015827703b015686090922fe2c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_code.js_20250724-102426.json",
+              "evidenceID": "5730674",
+              "hashedID": "5642569721585941153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c300cf32f19493605d1e00e71baa978c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_code.js_20250724-102427.json",
+              "evidenceID": "5730672",
+              "hashedID": "5642569737746535135",
+              "full_path": "[REDACTED]",
+              "md5_hash": "43f553cce0ef80a837dd1a65dd52a03f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_middleware.go_20250724-102420.json",
+              "evidenceID": "5730671",
+              "hashedID": "5642569736215535150",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e406ee71e7e236d11cd35e37c801a1db",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_tenant.yaml_20250731-113323.json",
+              "evidenceID": "5752697",
+              "hashedID": "5642576470156931704",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2e9d7ffc2255781b036a4e7445e8862f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "workspace_mfa_20250731-140647.json",
+              "evidenceID": "5753288",
+              "hashedID": "5642575627642890999",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bbd7eae9ac0c3d62cadca2cb091b9ad1",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-IAM-03",
+          "description": "Enforce appropriately secure authentication methods for non-user accounts and services",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_authorization.go_20250731-113240.json",
+              "evidenceID": "5752695",
+              "hashedID": "5642576469137656726",
+              "full_path": "[REDACTED]",
+              "md5_hash": "eb0ccb015827703b015686090922fe2c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_iam.tf_20250722-095622.json",
+              "evidenceID": "5720930",
+              "hashedID": "5642556397680295857",
+              "full_path": "[REDACTED]",
+              "md5_hash": "ddc87bc6f99caa177fc387582cca973b",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_kms.tf_20250726-103700.json",
+              "evidenceID": "5730691",
+              "hashedID": "5642569728790442562",
+              "full_path": "[REDACTED]",
+              "md5_hash": "585d2f738a5f9ada2fa8c19d79d07e97",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_tenant.yaml_20250731-113323.json",
+              "evidenceID": "5752697",
+              "hashedID": "5642576470156931704",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2e9d7ffc2255781b036a4e7445e8862f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-IAM-04",
+          "description": "Use a least-privileged, role and attribute-based, and just-in-time security authorization model for all user and non-user accounts and services",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_authorization.go_20250731-113240.json",
+              "evidenceID": "5752695",
+              "hashedID": "5642576469137656726",
+              "full_path": "[REDACTED]",
+              "md5_hash": "eb0ccb015827703b015686090922fe2c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_iam.tf_20250722-095622.json",
+              "evidenceID": "5720930",
+              "hashedID": "5642556397680295857",
+              "full_path": "[REDACTED]",
+              "md5_hash": "ddc87bc6f99caa177fc387582cca973b",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_middleware.go_20250724-102420.json",
+              "evidenceID": "5730671",
+              "hashedID": "5642569736215535150",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e406ee71e7e236d11cd35e37c801a1db",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_custom_role_changes_20250721-090936.json",
+              "evidenceID": "5720827",
+              "hashedID": "5642557136179265882",
+              "full_path": "[REDACTED]",
+              "md5_hash": "a2368b6acc8419b676f66bc21c567d4a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_project_ownership_assignment_20250721-090936.json",
+              "evidenceID": "5720829",
+              "hashedID": "5642557188740245820",
+              "full_path": "[REDACTED]",
+              "md5_hash": "168de866671c1d1d65879ba4a6487d49",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "workspace_groups_20250721-111228.json",
+              "evidenceID": "5730865",
+              "hashedID": "5642569780191341488",
+              "full_path": "[REDACTED]",
+              "md5_hash": "18d9cd4733645ad11584c34d90931a40",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-IAM-05",
+          "description": "Apply zero trust design principles",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_authorization.go_20250731-113240.json",
+              "evidenceID": "5752695",
+              "hashedID": "5642576469137656726",
+              "full_path": "[REDACTED]",
+              "md5_hash": "eb0ccb015827703b015686090922fe2c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_code.js_20250724-102426.json",
+              "evidenceID": "5730674",
+              "hashedID": "5642569721585941153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c300cf32f19493605d1e00e71baa978c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_code.js_20250724-102427.json",
+              "evidenceID": "5730672",
+              "hashedID": "5642569737746535135",
+              "full_path": "[REDACTED]",
+              "md5_hash": "43f553cce0ef80a837dd1a65dd52a03f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_middleware.go_20250724-102420.json",
+              "evidenceID": "5730671",
+              "hashedID": "5642569736215535150",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e406ee71e7e236d11cd35e37c801a1db",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-IAM-06",
+          "description": "Automatically disable or otherwise secure accounts with privileged access in response to suspicious activity",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_tenant.yaml_20250731-113323.json",
+              "evidenceID": "5752697",
+              "hashedID": "5642576470156931704",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2e9d7ffc2255781b036a4e7445e8862f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_audit_configuration_changes_20250721-090936.json",
+              "evidenceID": "5720828",
+              "hashedID": "5642557189218317579",
+              "full_path": "[REDACTED]",
+              "md5_hash": "f1c6a66f17da08d44323baa3bed2251e",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_custom_role_changes_20250721-090936.json",
+              "evidenceID": "5720827",
+              "hashedID": "5642557136179265882",
+              "full_path": "[REDACTED]",
+              "md5_hash": "a2368b6acc8419b676f66bc21c567d4a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_project_ownership_assignment_20250721-090936.json",
+              "evidenceID": "5720829",
+              "hashedID": "5642557188740245820",
+              "full_path": "[REDACTED]",
+              "md5_hash": "168de866671c1d1d65879ba4a6487d49",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "PIY",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-PIY-01",
+          "description": "Have an up-to-date information resource inventory or code defining all deployed assets, software, and services",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_kms.tf_20250726-103700.json",
+              "evidenceID": "5730691",
+              "hashedID": "5642569728790442562",
+              "full_path": "[REDACTED]",
+              "md5_hash": "585d2f738a5f9ada2fa8c19d79d07e97",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "workspace_users_20250721-111226.json",
+              "evidenceID": "5730864",
+              "hashedID": "5642569780805728159",
+              "full_path": "[REDACTED]",
+              "md5_hash": "5c849a058bc805b27cfca36c757c93a0",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-PIY-02",
+          "description": "Have policies outlining the security objectives of all information resources",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-PIY-03",
+          "description": "Maintain a vulnerability disclosure program",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-08 Incident and Breach Management Procedure v2.2.docx",
+              "evidenceID": "5798715",
+              "hashedID": "5642518593952602778",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bfda1c43d55c2eac9d6bcde3ea806649",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-PIY-04",
+          "description": "Build security considerations into the Software Development Lifecycle and align with CISA Secure By Design principles",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_codeql.yml_20250724-102416.json",
+              "evidenceID": "5740341",
+              "hashedID": "5642564556163565556",
+              "full_path": "[REDACTED]",
+              "md5_hash": "3d49c38fbed9e246487aa1f9dfcca0c9",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_rulesets_20250721-103430.json",
+              "evidenceID": "5720847",
+              "hashedID": "5642557181472379534",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6e5b9d81ec7aca81a455908151b84b2f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_security_rules_20250731-142157.json",
+              "evidenceID": "5753504",
+              "hashedID": "5642575732963439151",
+              "full_path": "[REDACTED]",
+              "md5_hash": "0048d3f297f186bbad5cea2244b85851",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_workflow_files_20250731-113324.json",
+              "evidenceID": "5752696",
+              "hashedID": "5642576468623834695",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d5c55ca772a3ee4ed6d545a38d102d96",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-PIY-05",
+          "description": "Document methods used to automatically evaluate information resource implementations",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_codeql.yml_20250724-102416.json",
+              "evidenceID": "5740341",
+              "hashedID": "5642564556163565556",
+              "full_path": "[REDACTED]",
+              "md5_hash": "3d49c38fbed9e246487aa1f9dfcca0c9",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_security_rules_20250731-142157.json",
+              "evidenceID": "5753504",
+              "hashedID": "5642575732963439151",
+              "full_path": "[REDACTED]",
+              "md5_hash": "0048d3f297f186bbad5cea2244b85851",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_workflow_files_20250731-113324.json",
+              "evidenceID": "5752696",
+              "hashedID": "5642576468623834695",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d5c55ca772a3ee4ed6d545a38d102d96",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-PIY-06",
+          "description": "Have a dedicated staff and budget for security with executive support, commensurate with the size, complexity, scope, and risk of the service offering",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-07 Risk Assessment and Risk Treatment Methodology v3.0.pdf",
+              "evidenceID": "5745268",
+              "hashedID": "5642562603698952707",
+              "full_path": "[REDACTED]",
+              "md5_hash": "971858a3ec397b25807c92646bce8e92",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Monthly Budget Review.png",
+              "evidenceID": "5745163",
+              "hashedID": "5642562585268532554",
+              "full_path": "[REDACTED]",
+              "md5_hash": "88ed6fd0de58a6363927e13d79d9a607",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-PIY-07",
+          "description": "Document risk management decisions for software supply chain security",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-07 Risk Assessment and Risk Treatment Methodology v3.0.pdf",
+              "evidenceID": "5745268",
+              "hashedID": "5642562603698952707",
+              "full_path": "[REDACTED]",
+              "md5_hash": "971858a3ec397b25807c92646bce8e92",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Risk Register Extract 2025-07-02.png",
+              "evidenceID": "5745267",
+              "hashedID": "5642562602165986898",
+              "full_path": "[REDACTED]",
+              "md5_hash": "8ae3380860e4fcfc6da7a258ba941b1b",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "TPR",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-TPR-01",
+          "description": "Identify all third-party information resources",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-09 Third Party Management Policy v3.9.docx",
+              "evidenceID": "5798717",
+              "hashedID": "5642518594871182716",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d755a89480f173d5c53e355f89deffdf",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Third-Party Service List - FedRAMP.xlsx",
+              "evidenceID": "5805899",
+              "hashedID": "5642532306302550922",
+              "full_path": "[REDACTED]",
+              "md5_hash": "1816ca3aa140be6aabd616d4d608ad4e",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-TPR-02",
+          "description": "Regularly confirm that services handling federal information or are likely to impact the confidentiality, integrity, or availability of federal information are FedRAMP authorized and securely configured",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-09 Third Party Management Policy v3.9.docx",
+              "evidenceID": "5798717",
+              "hashedID": "5642518594871182716",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d755a89480f173d5c53e355f89deffdf",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Third-Party Service List - FedRAMP.xlsx",
+              "evidenceID": "5805899",
+              "hashedID": "5642532306302550922",
+              "full_path": "[REDACTED]",
+              "md5_hash": "1816ca3aa140be6aabd616d4d608ad4e",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-TPR-03",
+          "description": "Identify and prioritize mitigation of potential supply chain risks",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-07 Risk Assessment and Risk Treatment Methodology v3.0.pdf",
+              "evidenceID": "5745268",
+              "hashedID": "5642562603698952707",
+              "full_path": "[REDACTED]",
+              "md5_hash": "971858a3ec397b25807c92646bce8e92",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-09 Third Party Management Policy v3.9.docx",
+              "evidenceID": "5798717",
+              "hashedID": "5642518594871182716",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d755a89480f173d5c53e355f89deffdf",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Risk Register Extract 2025-07-02.png",
+              "evidenceID": "5745267",
+              "hashedID": "5642562602165986898",
+              "full_path": "[REDACTED]",
+              "md5_hash": "8ae3380860e4fcfc6da7a258ba941b1b",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-TPR-04",
+          "description": "Monitor third party software information resources for upstream vulnerabilities, with contractual notification requirements or active monitoring services",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_dependabot.yml_20250724-102415.json",
+              "evidenceID": "5741330",
+              "hashedID": "5642563995711758593",
+              "full_path": "[REDACTED]",
+              "md5_hash": "91b7869066611db6d381a9dc3a34a3f0",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_security_rules_20250731-142157.json",
+              "evidenceID": "5753504",
+              "hashedID": "5642575732963439151",
+              "full_path": "[REDACTED]",
+              "md5_hash": "0048d3f297f186bbad5cea2244b85851",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "RPL",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-RPL-01",
+          "description": "Define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-10 Disaster Recovery Plan.pdf",
+              "evidenceID": "5730527",
+              "hashedID": "5642569940052100542",
+              "full_path": "[REDACTED]",
+              "md5_hash": "fddea4c818bd4d711951a0af15a81167",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-RPL-02",
+          "description": "Develop and maintain a recovery plan that aligns with the defined recovery objectives",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-08 Incident and Breach Management Procedure v2.2.docx",
+              "evidenceID": "5798715",
+              "hashedID": "5642518593952602778",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bfda1c43d55c2eac9d6bcde3ea806649",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-10 Disaster Recovery Plan.pdf",
+              "evidenceID": "5730527",
+              "hashedID": "5642569940052100542",
+              "full_path": "[REDACTED]",
+              "md5_hash": "fddea4c818bd4d711951a0af15a81167",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "IRT Quarterly Meeting.png",
+              "evidenceID": "5744645",
+              "hashedID": "5642562296703851940",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2ecb4db1fa96387db8802ba76350a54f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-RPL-03",
+          "description": "Perform system backups aligned with recovery objectives",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-10 Disaster Recovery Plan.pdf",
+              "evidenceID": "5730527",
+              "hashedID": "5642569940052100542",
+              "full_path": "[REDACTED]",
+              "md5_hash": "fddea4c818bd4d711951a0af15a81167",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "cloudsql_backup_verification_20250730-162552.json",
+              "evidenceID": "5747422",
+              "hashedID": "5642579074624597901",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6c39b1afaae803c323ec1f6badf0562a",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-RPL-04",
+          "description": "Regularly test the capability to recover from incidents and contingencies",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-10 Disaster Recovery Plan.pdf",
+              "evidenceID": "5730527",
+              "hashedID": "5642569940052100542",
+              "full_path": "[REDACTED]",
+              "md5_hash": "fddea4c818bd4d711951a0af15a81167",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "IRT Quarterly Meeting.png",
+              "evidenceID": "5744645",
+              "hashedID": "5642562296703851940",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2ecb4db1fa96387db8802ba76350a54f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "INR",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-INR-01",
+          "description": "Report incidents according to FedRAMP requirements and cloud service provider policies",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-08 Incident and Breach Management Procedure v2.2.docx",
+              "evidenceID": "5798715",
+              "hashedID": "5642518593952602778",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bfda1c43d55c2eac9d6bcde3ea806649",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-INR-02",
+          "description": "Maintain a log of incidents and periodically review past incidents for patterns or vulnerabilities",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-08 Incident and Breach Management Procedure v2.2.docx",
+              "evidenceID": "5798715",
+              "hashedID": "5642518593952602778",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bfda1c43d55c2eac9d6bcde3ea806649",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "KSI-INR-02.pdf",
+              "evidenceID": "5751183",
+              "hashedID": "5642576806340318222",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6daec86f3fe07bfbb89a73c6eabdbeb3",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "MM IRT 01162025.pdf",
+              "evidenceID": "5751181",
+              "hashedID": "5642576805287390636",
+              "full_path": "[REDACTED]",
+              "md5_hash": "887a712f373fd95b326e73c14007c49c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "MM IRT 04172025.pdf",
+              "evidenceID": "5751182",
+              "hashedID": "5642576804673003613",
+              "full_path": "[REDACTED]",
+              "md5_hash": "24c5cd4d834c5c4880bf65601fe26130",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-INR-03",
+          "description": "Generate after action reports and regularly incorporate lessons learned into operations",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-08 Incident and Breach Management Procedure v2.2.docx",
+              "evidenceID": "5798715",
+              "hashedID": "5642518593952602778",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bfda1c43d55c2eac9d6bcde3ea806649",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "CNA",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-CNA-01",
+          "description": "Configure ALL information resources to limit inbound and outbound traffic",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "cloudflare_ddos_protection_20250731-120838.json",
+              "evidenceID": "5752694",
+              "hashedID": "5642576467604559845",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d8d174d632e5738702732fe04b61d5bd",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_firewall_rule_changes_20250721-090936.json",
+              "evidenceID": "5720918",
+              "hashedID": "5642556390689967493",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c9302ad64629f3f02088448acbd3e160",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CNA-02",
+          "description": "Design systems to minimize the attack surface and minimize lateral movement if compromised",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_iam.tf_20250722-095622.json",
+              "evidenceID": "5720930",
+              "hashedID": "5642556397680295857",
+              "full_path": "[REDACTED]",
+              "md5_hash": "ddc87bc6f99caa177fc387582cca973b",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_middleware.go_20250724-102420.json",
+              "evidenceID": "5730671",
+              "hashedID": "5642569736215535150",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e406ee71e7e236d11cd35e37c801a1db",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CNA-03",
+          "description": "Use logical networking and related capabilities to enforce traffic flow controls",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_firewall_rule_changes_20250721-090936.json",
+              "evidenceID": "5720918",
+              "hashedID": "5642556390689967493",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c9302ad64629f3f02088448acbd3e160",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_network_changes_20250721-090936.json",
+              "evidenceID": "5720920",
+              "hashedID": "5642556391711339623",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6a911ae595e60d6f0330f4c15204054a",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CNA-04",
+          "description": "Use immutable infrastructure with strictly defined functionality and privileges by default",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_api_run.tf_20250804-151518.json",
+              "evidenceID": "5767876",
+              "hashedID": "5642586097910976691",
+              "full_path": "[REDACTED]",
+              "md5_hash": "95d391da984905fab6808deb8bf0c69f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_iam.tf_20250722-095622.json",
+              "evidenceID": "5720930",
+              "hashedID": "5642556397680295857",
+              "full_path": "[REDACTED]",
+              "md5_hash": "ddc87bc6f99caa177fc387582cca973b",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CNA-05",
+          "description": "Have denial of service protection",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "cloudflare_ddos_protection_20250731-120838.json",
+              "evidenceID": "5752694",
+              "hashedID": "5642576467604559845",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d8d174d632e5738702732fe04b61d5bd",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_tenant.yaml_20250731-113323.json",
+              "evidenceID": "5752697",
+              "hashedID": "5642576470156931704",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2e9d7ffc2255781b036a4e7445e8862f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "img.png",
+              "evidenceID": "5730854",
+              "hashedID": "5642569774870326709",
+              "full_path": "[REDACTED]",
+              "md5_hash": "06e45190bec1b2801bd6e57208be6155",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CNA-06",
+          "description": "Design systems for high availability and rapid recovery",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-10 Disaster Recovery Plan.pdf",
+              "evidenceID": "5730527",
+              "hashedID": "5642569940052100542",
+              "full_path": "[REDACTED]",
+              "md5_hash": "fddea4c818bd4d711951a0af15a81167",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CNA-07",
+          "description": "Ensure cloud-native information resources are implemented based on host provider’s best practices and documented guidance",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "img.png",
+              "evidenceID": "5730854",
+              "hashedID": "5642569774870326709",
+              "full_path": "[REDACTED]",
+              "md5_hash": "06e45190bec1b2801bd6e57208be6155",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "SVC",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-SVC-01",
+          "description": "Harden and review network and system configurations",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "cloudflare_ddos_protection_20250731-120838.json",
+              "evidenceID": "5752694",
+              "hashedID": "5642576467604559845",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d8d174d632e5738702732fe04b61d5bd",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_api_run.tf_20250804-151518.json",
+              "evidenceID": "5767876",
+              "hashedID": "5642586097910976691",
+              "full_path": "[REDACTED]",
+              "md5_hash": "95d391da984905fab6808deb8bf0c69f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_authorization.go_20250731-113240.json",
+              "evidenceID": "5752695",
+              "hashedID": "5642576469137656726",
+              "full_path": "[REDACTED]",
+              "md5_hash": "eb0ccb015827703b015686090922fe2c",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_tenant.yaml_20250731-113323.json",
+              "evidenceID": "5752697",
+              "hashedID": "5642576470156931704",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2e9d7ffc2255781b036a4e7445e8862f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_rulesets_20250721-103430.json",
+              "evidenceID": "5720847",
+              "hashedID": "5642557181472379534",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6e5b9d81ec7aca81a455908151b84b2f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_security_rules_20250731-142157.json",
+              "evidenceID": "5753504",
+              "hashedID": "5642575732963439151",
+              "full_path": "[REDACTED]",
+              "md5_hash": "0048d3f297f186bbad5cea2244b85851",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "img.png",
+              "evidenceID": "5730854",
+              "hashedID": "5642569774870326709",
+              "full_path": "[REDACTED]",
+              "md5_hash": "06e45190bec1b2801bd6e57208be6155",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_firewall_rule_changes_20250721-090936.json",
+              "evidenceID": "5720918",
+              "hashedID": "5642556390689967493",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c9302ad64629f3f02088448acbd3e160",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-SVC-02",
+          "description": "Encrypt or otherwise secure network traffic",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "cloudflare_ddos_protection_20250731-120838.json",
+              "evidenceID": "5752694",
+              "hashedID": "5642576467604559845",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d8d174d632e5738702732fe04b61d5bd",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_api_run.tf_20250804-151518.json",
+              "evidenceID": "5767876",
+              "hashedID": "5642586097910976691",
+              "full_path": "[REDACTED]",
+              "md5_hash": "95d391da984905fab6808deb8bf0c69f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "img.png",
+              "evidenceID": "5730854",
+              "hashedID": "5642569774870326709",
+              "full_path": "[REDACTED]",
+              "md5_hash": "06e45190bec1b2801bd6e57208be6155",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-SVC-03",
+          "description": "Encrypt all federal and sensitive information at rest",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_kms.tf_20250726-103700.json",
+              "evidenceID": "5730691",
+              "hashedID": "5642569728790442562",
+              "full_path": "[REDACTED]",
+              "md5_hash": "585d2f738a5f9ada2fa8c19d79d07e97",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-SVC-04",
+          "description": "Manage configuration centrally",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_api_run.tf_20250804-151518.json",
+              "evidenceID": "5767876",
+              "hashedID": "5642586097910976691",
+              "full_path": "[REDACTED]",
+              "md5_hash": "95d391da984905fab6808deb8bf0c69f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_iam.tf_20250722-095622.json",
+              "evidenceID": "5720930",
+              "hashedID": "5642556397680295857",
+              "full_path": "[REDACTED]",
+              "md5_hash": "ddc87bc6f99caa177fc387582cca973b",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_kms.tf_20250726-103700.json",
+              "evidenceID": "5730691",
+              "hashedID": "5642569728790442562",
+              "full_path": "[REDACTED]",
+              "md5_hash": "585d2f738a5f9ada2fa8c19d79d07e97",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_tenant.yaml_20250731-113323.json",
+              "evidenceID": "5752697",
+              "hashedID": "5642576470156931704",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2e9d7ffc2255781b036a4e7445e8862f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-SVC-05",
+          "description": "Enforce system and information resource integrity through cryptographic means",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_api_run.tf_20250804-151518.json",
+              "evidenceID": "5767876",
+              "hashedID": "5642586097910976691",
+              "full_path": "[REDACTED]",
+              "md5_hash": "95d391da984905fab6808deb8bf0c69f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_rulesets_20250721-103430.json",
+              "evidenceID": "5720847",
+              "hashedID": "5642557181472379534",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6e5b9d81ec7aca81a455908151b84b2f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-SVC-06",
+          "description": "Use automated key management systems to manage, protect, and regularly rotate digital keys and certificates",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_cf_tunnel_run.tf_20250724-102421.json",
+              "evidenceID": "5720901",
+              "hashedID": "5642556399490929892",
+              "full_path": "[REDACTED]",
+              "md5_hash": "9c17f2a532ff96e7085e7c1997e6ff61",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_kms.tf_20250726-103700.json",
+              "evidenceID": "5730691",
+              "hashedID": "5642569728790442562",
+              "full_path": "[REDACTED]",
+              "md5_hash": "585d2f738a5f9ada2fa8c19d79d07e97",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "kms_rotation_policy_20250730-151306.json",
+              "evidenceID": "5746640",
+              "hashedID": "5642578964139951743",
+              "full_path": "[REDACTED]",
+              "md5_hash": "676278d2e995f8e4919e066ac8af7985",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-SVC-07",
+          "description": "Use a consistent, risk-informed approach for applying security patches",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_cloudbuild.tf_20250724-102424.json",
+              "evidenceID": "5730342",
+              "hashedID": "5642569556778586037",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7fa40f8d180129b62bb0002d6bac887f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "MLA",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-MLA-01",
+          "description": "Operate a Security Information and Event Management (SIEM) or similar system(s) for centralized, tamper-resistant logging of events, activities, and changes",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_network.tf_20250724-102423.json",
+              "evidenceID": "5729927",
+              "hashedID": "5642569611006506886",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2180e33eb4a1ce41bd0225d26321e66d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_firewall_rule_changes_20250721-090936.json",
+              "evidenceID": "5720918",
+              "hashedID": "5642556390689967493",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c9302ad64629f3f02088448acbd3e160",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_network_changes_20250721-090936.json",
+              "evidenceID": "5720920",
+              "hashedID": "5642556391711339623",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6a911ae595e60d6f0330f4c15204054a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-MLA-02",
+          "description": "Regularly review and audit logs",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_audit_configuration_changes_20250721-090936.json",
+              "evidenceID": "5720828",
+              "hashedID": "5642557189218317579",
+              "full_path": "[REDACTED]",
+              "md5_hash": "f1c6a66f17da08d44323baa3bed2251e",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_custom_role_changes_20250721-090936.json",
+              "evidenceID": "5720827",
+              "hashedID": "5642557136179265882",
+              "full_path": "[REDACTED]",
+              "md5_hash": "a2368b6acc8419b676f66bc21c567d4a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_firewall_rule_changes_20250721-090936.json",
+              "evidenceID": "5720918",
+              "hashedID": "5642556390689967493",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c9302ad64629f3f02088448acbd3e160",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_network_changes_20250721-090936.json",
+              "evidenceID": "5720920",
+              "hashedID": "5642556391711339623",
+              "full_path": "[REDACTED]",
+              "md5_hash": "6a911ae595e60d6f0330f4c15204054a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_project_ownership_assignment_20250721-090936.json",
+              "evidenceID": "5720829",
+              "hashedID": "5642557188740245820",
+              "full_path": "[REDACTED]",
+              "md5_hash": "168de866671c1d1d65879ba4a6487d49",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_sql_instance_configuration_changes_20250721-090936.json",
+              "evidenceID": "5720825",
+              "hashedID": "5642557136200079096",
+              "full_path": "[REDACTED]",
+              "md5_hash": "06af775e8fe63a6077107eabf1fc2a1a",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-MLA-03",
+          "description": "Rapidly detect and remediate or mitigate vulnerabilities",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "AuditBoard Log of Intruder Remediations 2025-07-01.png",
+              "evidenceID": "5751252",
+              "hashedID": "5642576839176447139",
+              "full_path": "[REDACTED]",
+              "md5_hash": "b78903d812dcd9bcdddae7f34f1d349a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_codeql.yml_20250724-102416.json",
+              "evidenceID": "5740341",
+              "hashedID": "5642564556163565556",
+              "full_path": "[REDACTED]",
+              "md5_hash": "3d49c38fbed9e246487aa1f9dfcca0c9",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_dependabot.yml_20250724-102415.json",
+              "evidenceID": "5741330",
+              "hashedID": "5642563995711758593",
+              "full_path": "[REDACTED]",
+              "md5_hash": "91b7869066611db6d381a9dc3a34a3f0",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_security_rules_20250731-142157.json",
+              "evidenceID": "5753504",
+              "hashedID": "5642575732963439151",
+              "full_path": "[REDACTED]",
+              "md5_hash": "0048d3f297f186bbad5cea2244b85851",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_workflow_files_20250731-113324.json",
+              "evidenceID": "5752696",
+              "hashedID": "5642576468623834695",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d5c55ca772a3ee4ed6d545a38d102d96",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Intruder Monthly Scan Config 2025-07-01.png",
+              "evidenceID": "5751251",
+              "hashedID": "5642576839790833906",
+              "full_path": "[REDACTED]",
+              "md5_hash": "5670e6ca0cf0372c3912289a2621da39",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-MLA-04",
+          "description": "Perform authenticated vulnerability scanning on information resources",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_codeql.yml_20250724-102416.json",
+              "evidenceID": "5740341",
+              "hashedID": "5642564556163565556",
+              "full_path": "[REDACTED]",
+              "md5_hash": "3d49c38fbed9e246487aa1f9dfcca0c9",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_dependabot.yml_20250724-102415.json",
+              "evidenceID": "5741330",
+              "hashedID": "5642563995711758593",
+              "full_path": "[REDACTED]",
+              "md5_hash": "91b7869066611db6d381a9dc3a34a3f0",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_security_rules_20250731-142157.json",
+              "evidenceID": "5753504",
+              "hashedID": "5642575732963439151",
+              "full_path": "[REDACTED]",
+              "md5_hash": "0048d3f297f186bbad5cea2244b85851",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_workflow_files_20250731-113324.json",
+              "evidenceID": "5752696",
+              "hashedID": "5642576468623834695",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d5c55ca772a3ee4ed6d545a38d102d96",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Intruder Monthly Scan Config 2025-07-01.png",
+              "evidenceID": "5751251",
+              "hashedID": "5642576839790833906",
+              "full_path": "[REDACTED]",
+              "md5_hash": "5670e6ca0cf0372c3912289a2621da39",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Intruder_Vulnerability_Report_2025-07-02.csv",
+              "evidenceID": "5743684",
+              "hashedID": "5642562904307153203",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e0677b03bd467a6db14fbc7461c46c1f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-MLA-05",
+          "description": "Perform Infrastructure as Code and configuration evaluation and testing",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "github_file_retrieval_codeql.yml_20250724-102416.json",
+              "evidenceID": "5740341",
+              "hashedID": "5642564556163565556",
+              "full_path": "[REDACTED]",
+              "md5_hash": "3d49c38fbed9e246487aa1f9dfcca0c9",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_dependabot.yml_20250724-102415.json",
+              "evidenceID": "5741330",
+              "hashedID": "5642563995711758593",
+              "full_path": "[REDACTED]",
+              "md5_hash": "91b7869066611db6d381a9dc3a34a3f0",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_file_retrieval_main.tf_20250724-102422.json",
+              "evidenceID": "5729946",
+              "hashedID": "5642569602182502153",
+              "full_path": "[REDACTED]",
+              "md5_hash": "7d7bd4df52e92639158fb50486770abe",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_security_rules_20250731-142157.json",
+              "evidenceID": "5753504",
+              "hashedID": "5642575732963439151",
+              "full_path": "[REDACTED]",
+              "md5_hash": "0048d3f297f186bbad5cea2244b85851",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "github_workflow_files_20250731-113324.json",
+              "evidenceID": "5752696",
+              "hashedID": "5642576468623834695",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d5c55ca772a3ee4ed6d545a38d102d96",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-MLA-06",
+          "description": "Centrally track and prioritize the mitigation and/or remediation of identified vulnerabilities",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-07 Risk Assessment and Risk Treatment Methodology v3.0.pdf",
+              "evidenceID": "5745268",
+              "hashedID": "5642562603698952707",
+              "full_path": "[REDACTED]",
+              "md5_hash": "971858a3ec397b25807c92646bce8e92",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "AuditBoard Log of Intruder Remediations 2025-07-01.png",
+              "evidenceID": "5751252",
+              "hashedID": "5642576839176447139",
+              "full_path": "[REDACTED]",
+              "md5_hash": "b78903d812dcd9bcdddae7f34f1d349a",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Intruder Monthly Scan Config 2025-07-01.png",
+              "evidenceID": "5751251",
+              "hashedID": "5642576839790833906",
+              "full_path": "[REDACTED]",
+              "md5_hash": "5670e6ca0cf0372c3912289a2621da39",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "logging_metric_alert_security_command_center_20250724-095253.json",
+              "evidenceID": "5731510",
+              "hashedID": "5642569325103457317",
+              "full_path": "[REDACTED]",
+              "md5_hash": "e2a6106c41189198ae1ed068dbad128f",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    },
+    {
+      "type": "CED",
+      "group_result": "PASSED",
+      "controls": [
+        {
+          "reference_identifier": "KSI-CED-01",
+          "description": "Ensure all employees receive security awareness training",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "2025 Security Awareness Training.pdf",
+              "evidenceID": "5754328",
+              "hashedID": "5642575864249609191",
+              "full_path": "[REDACTED]",
+              "md5_hash": "0747e7d28291073d02f7eff1742949fa",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-08 Incident and Breach Management Procedure v2.2.docx",
+              "evidenceID": "5798715",
+              "hashedID": "5642518593952602778",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bfda1c43d55c2eac9d6bcde3ea806649",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Courses_Report_688bcbd2302d4.csv",
+              "evidenceID": "5754329",
+              "hashedID": "5642575865749151640",
+              "full_path": "[REDACTED]",
+              "md5_hash": "d4e26210ed4f249ebd9f6d480ab5b38d",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Security Awareness Tracking.png",
+              "evidenceID": "5754730",
+              "hashedID": "5642574981060975929",
+              "full_path": "[REDACTED]",
+              "md5_hash": "a9480ebc9a892595062d475720902e39",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        },
+        {
+          "reference_identifier": "KSI-CED-02",
+          "description": "Require role-specific training for high risk roles, including at least roles with privileged access",
+          "status": "Accepted",
+          "evidence": [
+            {
+              "name": "ALIGN-SEC-08 Incident and Breach Management Procedure v2.2.docx",
+              "evidenceID": "5798715",
+              "hashedID": "5642518593952602778",
+              "full_path": "[REDACTED]",
+              "md5_hash": "bfda1c43d55c2eac9d6bcde3ea806649",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "ALIGN-SEC-13 Security Manual v1.1.docx",
+              "evidenceID": "5798716",
+              "hashedID": "5642518595485569355",
+              "full_path": "[REDACTED]",
+              "md5_hash": "71012220401f6a17301cfc16f22df955",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "IRT Quarterly Meeting.png",
+              "evidenceID": "5744645",
+              "hashedID": "5642562296703851940",
+              "full_path": "[REDACTED]",
+              "md5_hash": "2ecb4db1fa96387db8802ba76350a54f",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Key Custodian Form - Ferretti.docx.pdf",
+              "evidenceID": "5744624",
+              "hashedID": "5642562303568925791",
+              "full_path": "[REDACTED]",
+              "md5_hash": "a75659720cac996a137e66df8fa0c97e",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Key Custodian Form - Grayson.docx.pdf",
+              "evidenceID": "5744626",
+              "hashedID": "5642562304487537697",
+              "full_path": "[REDACTED]",
+              "md5_hash": "5210968b25c746bd4f319321438cf8aa",
+              "comment": "",
+              "note": "[REDACTED]"
+            },
+            {
+              "name": "Key Custodian Form - Joiner.docx.pdf",
+              "evidenceID": "5744625",
+              "hashedID": "5642562302954539120",
+              "full_path": "[REDACTED]",
+              "md5_hash": "c32b1ab9054db2a5438ac16ab9b71afe",
+              "comment": "",
+              "note": "[REDACTED]"
+            }
+          ],
+          "testing_notes": "[REDACTED]",
+          "testing_result": "TRUE",
+          "findings_results": "",
+          "findings_response": ""
+        }
+      ]
+    }
+  ]
+}
