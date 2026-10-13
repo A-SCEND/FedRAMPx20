@@ -1,0 +1,41 @@
+{
+  "acceptedVulnerabilities": "None. No vulnerabilities were accepted during the reporting period, and no POA\u0026M items are open.",
+  "activeAgencies": [],
+  "certificationDataChanges": [
+    "First Ongoing Certification Report for A-SCEND. For baseline context, changes between initial certification (2025-09-17) and this period included: a self-hosted identity broker (Verity) built to replace the commercial identity service for federal users, the Go FIPS 140-3 cryptographic module enabled in the broker, hardened distroless container images with STIG scanning, SBOM generation, and Binary Authorization on Cloud Run, the API gateway replaced with Envoy, and a system use notification (AC-8) added to the federal sign-in pages.",
+    "Published a machine-readable Certification Package Overview (2026-09-01) in the public FedRAMPx20 repository. It lists leveraged FedRAMP services (Google Cloud FR1805751477, Microsoft 365 GCC, Cloudflare for Government FR2000863987A) and non-certified workforce identity providers.",
+    "Federal user authentication moved in-boundary to the self-hosted Verity identity broker, with SAML and OIDC federation through ORY Polis / BoxyHQ Jackson. Federal accounts are now required to sign in through agency SSO. Reported as a transformative change; see transformativeChanges.",
+    "Session security strengthened: sign-out now revokes the token pair server-side, revoked refresh tokens are rejected (fail closed), authentication cookies are set Secure and SameSite, and sign-out returns users through the identity provider they signed in with.",
+    "Federal data containment strengthened: product analytics events and outbound notification emails are suppressed for federal users, and automatic AI testing-note generation is gated by an account-level feature flag.",
+    "Authorization boundary, network architecture, and data flow diagrams were rebuilt (June to July 2026). They now show Cloudflare for Government in-boundary as the WAF and sole network ingress, alternate processing and backups, external update sources, FIPS-validated cryptographic modules, and DNSSEC.",
+    "Infrastructure hardening: DNSSEC validation for VPC DNS, a TLS 1.2 minimum on gateway-to-service connections, a FIPS build of the Cloudflare tunnel connector, Binary Authorization extended with least-privilege build service accounts, and a strengthened database audit logging (pgaudit) configuration.",
+    "AI-assisted features were extended: the in-product assistant, AI citations, and batch generation of AI first-pass and cross-service reports. AI features remain controlled per account by feature flags.",
+    "New and expanded integrations with commercial GRC and CRM platforms (HITRUST MyCSF evidence push, Vanta evidence webhook and multi-region support, MuleSoft engagement status sync) were approved for commercial tenants only. They are not enabled for federal tenants pending interconnection review."
+  ],
+  "certificationPackageOverviewUri": "https://github.com/A-SCEND/FedRAMPx20/blob/main/a-scend-fedramp-certification-package-overview.json",
+  "plannedCertificationDataChanges": {
+    "changes": [
+      "Update the public Secure Configuration Guidance and Certification Package Overview to describe federal SSO through the Verity identity broker, replacing the current Auth0 setup instructions.",
+      "Publish the next OCR target date and an OCR feedback channel with public certification data (CCM-OCR-NRD, CCM-OCR-FBM) and begin the quarterly cycle. The next OCR will cover 2026-09-17 through 2026-12-16.",
+      "Simplify federal SSO onboarding with SSO setup invitation emails and account discovery by email or account name at sign-in.",
+      "Launch a partner portal and partner API backed by a dedicated fine-grained authorization service (OpenFGA). Boundary applicability will be determined before any federal data is in scope.",
+      "Commercial third-party integrations will not be enabled for federal tenants without prior interconnection review and significant change notification."
+    ],
+    "planningHorizonThrough": "2026-12-31"
+  },
+  "reportPeriod": {
+    "from": "2026-06-17",
+    "to": "2026-09-16"
+  },
+  "reportableIncidents": {
+    "incidents": []
+  },
+  "transformativeChanges": [
+    "Federal identity and authentication: replaced the commercial third-party identity service (Auth0) for federal users with a self-hosted identity broker inside the authorization boundary. Verity brokers SAML and OIDC federation through ORY Polis / BoxyHQ Jackson, signs tokens with Cloud KMS keys, and supports server-side token revocation. Federal accounts are identified automatically and must authenticate through agency SSO. Polis federation was added in June 2026 and enforced for federal accounts with Release 26.7 (July 2026). Auth0 remains in use only for commercial users and handles no federal data."
+  ],
+  "updatedRecommendations": [
+    "Federal agencies must connect A-SCEND to their agency identity provider (SAML or OIDC) through the federal SSO setup flow, and that IdP should enforce phishing-resistant MFA (KSI-IAM-01). Federal accounts are required to sign in through agency SSO.",
+    "Do not connect commercial third-party integrations (for example Vanta or HITRUST MyCSF) to accounts or projects that contain federal data. These integrations are not enabled for federal tenants.",
+    "Users should sign out explicitly at the end of a session. Sign-out now revokes the session server-side."
+  ]
+}
