@@ -31,7 +31,7 @@
     "incidents": []
   },
   "transformativeChanges": [
-    "Federal identity and authentication: replaced the commercial third-party identity service (Auth0) for federal users with a self-hosted identity broker inside the authorization boundary. Verity brokers SAML and OIDC federation through ORY Polis / BoxyHQ Jackson, signs tokens with Cloud KMS keys, and supports server-side token revocation. Federal accounts are identified automatically and must authenticate through agency SSO. Polis federation was added in June 2026 and enforced for federal accounts with Release 26.7 (July 2026). Auth0 remains in use only for commercial users and handles no federal data."
+    "Federal identity and authentication: replaced the commercial third-party identity service (Auth0) for federal users with a self-hosted identity broker inside the authorization boundary. Verity brokers SAML and OIDC federation through ORY Polis / BoxyHQ Jackson, signs tokens with Cloud KMS keys, and supports server-side token revocation. Accounts are designated as federal through an administrative setting, and A-SCEND then automatically refuses access to those accounts from any session that did not sign in through agency SSO. Polis federation was added in June 2026 and enforced for federal accounts with Release 26.7 (July 2026). Auth0 remains in use only for commercial users and handles no federal data."
   ],
   "updatedRecommendations": [
     "Federal agencies must connect A-SCEND to their agency identity provider (SAML or OIDC) through the federal SSO setup flow, and that IdP should enforce phishing-resistant MFA (KSI-IAM-01). Federal accounts are required to sign in through agency SSO.",
